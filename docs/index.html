@@ -1,12 +1,29 @@
 "<!DOCTYPE html>
 
-<html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>HH_TON</title> <link rel=\"stylesheet\" href=\"../assets/css/style_index.css\"> </head> <body> <nav class=\"navbar\"> <div class=\"nav-container\"> <a href=\"./base.html\" class=\"nav-logo\">HH_TON</a> <ul class=\"nav-menu\"> <li class=\"nav-item\"><a href=\"./pronget.html\" class=\"nav-link\">Разделы</a></li> <li class=\"nav-item\"><a href=\"#filters\" class=\"nav-link\">Фильтры</a></li> <li class=\"nav-item\"><a href=\"./login.html\" class=\"nav-link\">Регистрация</a></li> </ul> </div> </nav> <main class=\"mainContent\"> <header class=\"Heder_Filter\" id=\"filters\"> <h1>Рекомендации</h1> </header>
+<html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>HH_TON</title> <link rel=\"stylesheet\" href=\"./static/style_index.css\"> </head> <body> <nav class=\"navbar\"> <div class=\"nav-container\"> <a href=\"./base.html\" class=\"nav-logo\">HH_TON</a> <ul class=\"nav-menu\"> <li class=\"nav-item\"><a href=\"./pronget.html\" class=\"nav-link\">Разделы</a></li> <li class=\"nav-item\"><a href=\"#filters\" class=\"nav-link\">Фильтры</a></li> <li class=\"nav-item\"><a href=\"./login.html\" class=\"nav-link\">Регистрация</a></li> </ul> </div> </nav>
 text
-<section class=\"container\">
-  <article class=\"card\">
-    <h2>Заглушка контента</h2>
-    <p>Здесь будет статический текст вместо серверного рендера.</p>
-    <a class=\"btn\" href=\"./it.html\">К IT новостям</a>
-  </article>
-</section>
-</main> <footer></footer> <script> document.querySelectorAll('.nav-link').forEach(link => { link.addEventListener('click', function() { document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active')); this.classList.add('active'); }); }); </script> </body> </html>"[3][1]
+<main class=\"mainContent\">
+  <header class=\"Heder_Filter\" id=\"filters\">
+    <h1>Рекомендации</h1>
+  </header>
+
+  <section class=\"container\">
+    <article class=\"card\">
+      <h2>Заглушка контента</h2>
+      <p>Здесь будет статический текст вместо серверного рендера.</p>
+      <a class=\"btn\" href=\"./it.html\">К IT новостям</a>
+    </article>
+  </section>
+</main>
+
+<footer></footer>
+
+<script>
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body> </html>"
